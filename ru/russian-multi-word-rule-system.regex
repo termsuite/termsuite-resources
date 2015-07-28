@@ -1,0 +1,44 @@
+#  ##################
+#  ### WARNING !! ###
+#  ###
+#  ### This resource has been intentionally truncated and may result
+#  ### in poor TermSuite performances.
+#  ###
+#  ### The complete list of rules will be made publicly available shortly, as soon as
+#  ### authors's researches about multi-word term detection, syntactic and
+#  ### and morphosyntactic term variation are published in scientific
+#  ### literature.
+#  ###
+#  ### Be patient ;)
+#  ###
+#  ### B. Daille and D. Cram
+#  ###
+
+
+use eu.project.ttc.types.WordAnnotation;
+set inline = false;
+
+matcher P: [category=="preposition"];
+matcher V: [category=="verb"];
+matcher Vbe as V: [category=="verb" & lemma=="быть"];
+matcher A: [category=="adjective"];
+matcher Vp as A: [V & mood=="participle"];
+matcher Vpg as A: [V & mood=="participle" & case=="genitive"];
+matcher A2 as A: [A | Vp];
+matcher A3 as A: [A | category=="numeral"];
+matcher N: [category=="noun"];
+matcher Ng as N: [N & case=="genitive"];
+matcher Ag as A: [A & case=="genitive"];
+matcher C: [category=="conjunction"];
+matcher R: [category=="adverb"];
+
+term "n": N;
+term "a": A;
+term "r": R;
+term "an": A2 N;
+term "npn": N P N ;	# noisy
+term "aan": A A N ;	;
+term "ann": A N Ng ;
+term "nn": N Ng;
+# removed comparing to ruta:
+# N Vpg - never matches, I can find no examples

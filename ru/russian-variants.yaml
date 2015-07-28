@@ -1,0 +1,45 @@
+#  ##################
+#  ### WARNING !! ###
+#  ###
+#  ### This resource has been intentionally truncated and may result
+#  ### in poor TermSuite performances.
+#  ###
+#  ### The complete list of rules will be made publicly available shortly, as soon as
+#  ### authors's researches about multi-word term detection, syntactic and
+#  ### and morphosyntactic term variation are published in scientific
+#  ### literature.
+#  ###
+#  ### Be patient ;)
+#  ###
+#  ### B. Daille and D. Cram
+#  ###
+
+
+# генератор тепло || подземный генератор тепло
+"S-Eg-NN-A":
+  source: N N
+  target: A N N
+  rule: s[0]==t[1] && s[1]==t[2]
+
+# авиастроительный фирма - известный авиастроительный фирма
+"S-Eg-AN-A":
+  source: A N
+  target: A A N
+  rule: s[1]==t[2] && (s[0]==t[0] || s[0]==t[1])
+
+# тепловой и электрический энергия || тепловой энергия
+"S-I-AN-CA":
+  source: A C A N
+  target: A N
+  rule: s[3]==t[1] && s[0]==t[0]
+
+
+#################################
+#  MORPHOLOGICAL  #
+#################################
+
+# энергобаланс - баланс энергии
+"M-P-NN":
+  source: N [compound]
+  target: N N
+  rule: s[0][0]==t[1] && s[0][1]==t[0]

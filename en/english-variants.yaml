@@ -1,0 +1,110 @@
+#  ##################
+#  ### WARNING !! ###
+#  ###
+#  ### This resource has been intentionally truncated and may result
+#  ### in poor TermSuite performances.
+#  ###
+#  ### The complete list of rules will be made publicly available shortly, as soon as
+#  ### authors's researches about multi-word term detection, syntactic and
+#  ### and morphosyntactic term variation are published in scientific
+#  ### literature.
+#  ###
+#  ### Be patient ;)
+#  ###
+#  ### B. Daille and D. Cram
+#  ###
+
+
+#################################
+#  NN  #
+#################################
+
+
+# chemical analysis || chemical analysis of fuel
+"S-Ed-NN-PN":
+  source: N N
+  target: N N P N
+  rule: s[0]==t[0] && s[1]==t[1] && t[2]=="of"
+
+
+# Double emploi avec S-Eg-AN-(A|N)
+# operation cost - high operation(al) cost
+"S-EgD-(A|N)N-A|N":
+  source: N N
+  target: N N N, A N N, A A N
+  rule: s[0].stem==t[1].stem && s[1]==t[2]
+
+
+# ecologically sensitive area - sensitivity area
+"S-EgD-NN-R":
+  source: R A N
+  target: N N
+  rule: s[1].stem==t[0].stem && s[2]==t[1]
+
+
+
+
+#################################
+#  AN  #
+#################################
+
+# thyroïdal cancer - tyroid cancer
+"S-R1Eg-AN-N":
+  source: A N
+  target: N N
+  rule: s[0].stem==t[0].stem && s[1]==t[1]
+
+
+
+# inflammatory carcinoma - inflammatory carcinoma of the breast
+# does not match AN-ANPDN
+"S-Ed-AN-PN":
+  source: A N
+  target: A N P N
+  rule: s[0]==t[0] && s[1]==t[1] && t[2]=="of"
+
+
+
+#Double emploi avec S-Eg-(A|N)N-A|N
+# fishing tap - male fishing tap
+"S-Eg-AN-(A|N)":
+  source: A N
+  target: A A N, N A N
+  rule: s[1]==t[2] && s[0]==t[1]
+
+
+#################################
+#  NPN  #
+#################################
+
+# level of sound - sound level, effect of rotation - rotational effect, airfoil with ice - iced airfoil, blade performance - performance of a blade
+# does not match NPDN-(A|N)N
+"S-PI-NN-P":
+  source: N P N
+  target: A N, N N
+  rule: s[0]==t[1] && s[2].stem==t[0].stem
+
+
+#variation preposition#
+"S-R2I-NPN-P":
+  source: N P N
+  target: N P N
+  rule: s[0]==t[0] && s[2]==t[2]
+
+#################################
+#  MORPHOLOGICAL  #
+#################################
+
+
+# airflow - air mass flow
+"M-I-NN-N":
+  source: N [compound]
+  target: N N N
+  rule: s[0][0]==t[0] && s[0][1] == t[2]
+
+
+# high-risk - high familial risk
+"M-I-AN-N|A|R":
+  source: N, A [compound]
+  target: A A N, A N N, A R N
+  rule: s[0][0]==t[0] && s[0][1] == t[2]

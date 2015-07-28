@@ -1,0 +1,61 @@
+#  ##################
+#  ### WARNING !! ###
+#  ###
+#  ### This resource has been intentionally truncated and may result
+#  ### in poor TermSuite performances.
+#  ###
+#  ### The complete list of rules will be made publicly available shortly, as soon as
+#  ### authors's researches about multi-word term detection, syntactic and
+#  ### and morphosyntactic term variation are published in scientific
+#  ### literature.
+#  ###
+#  ### Be patient ;)
+#  ###
+#  ### B. Daille and D. Cram
+#  ###
+
+
+#################################
+#  NN  #
+#################################
+
+
+# potenzial der windenergienutzung - technische potenzial der windenergienutzung
+"S-Eg-NN-A":
+  source: N N
+  target: A N N
+  rule: s[0]==t[1] && s[1]==t[2]
+
+#################################
+#  AN  #
+#################################
+
+# konventionell kraftwerk || wirtschaftlich konventionell kraftwerk
+"S-Eg-AN-A":
+  source: A N
+  target: A A N
+  rule: s[1]==t[2] && s[0]==t[1]
+
+# zukünftig Anforderung || zukünftig erhöht Anforderung
+"S-I-AN-A":
+  source: A N
+  target: A A N
+  rule: s[0]==t[0] && s[1]==t[2]
+
+
+# strategie für komponententausch || kostenoptimal strategie für komponententausch
+"S-Eg-NPN-A":
+  source: N P N
+  target: A N P N
+  rule: s[0]==t[1] && s[1]==t[2] && s[2]==t[3]
+
+
+#################################
+#  MORPHOLOGICAL  #
+#################################
+
+# Biokraftstoffe - biogene Kraftstoffe, windanlagenleistung - windkraft­ anlagenleistung
+"M-I-EN-A|N":
+  source: N [compound]
+  target: N N, A N
+  rule: t[0].compound && s[0].components.size()==2 && s[0][0]==t[0][0] && s[0][1]==t[1]

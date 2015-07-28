@@ -1,0 +1,49 @@
+#  ##################
+#  ### WARNING !! ###
+#  ###
+#  ### This resource has been intentionally truncated and may result
+#  ### in poor TermSuite performances.
+#  ###
+#  ### The complete list of rules will be made publicly available shortly, as soon as
+#  ### authors's researches about multi-word term detection, syntactic and
+#  ### and morphosyntactic term variation are published in scientific
+#  ### literature.
+#  ###
+#  ### Be patient ;)
+#  ###
+#  ### B. Daille and D. Cram
+#  ###
+
+
+import eu.project.ttc.types.TermSuiteTypeSystem;
+use eu.project.ttc.types.WordAnnotation;
+set inline = false;
+
+matcher Prep: [category=="adposition" & subCategory=="preposition"];
+matcher P1: [lemma=="of" | lemma=="with"]; # on? between?
+matcher P as P: [Prep & P1];
+matcher V: [category=="verb"];
+matcher A: [category=="adjective" & lemma!="same" & lemma!="many" & lemma!="other" & lemma!="much" & lemma!="several" & lemma!="new"];
+matcher Vpp as A: [V & tag=="VBN"]; # past participle
+matcher Ving as A: [V & tag=="VBG"]; # gerund or present participle
+matcher Vbe as V: [category=="verb" & lemma=="be"];
+matcher A2 as A: [A | Vpp | Ving];
+matcher N: [category=="noun"];
+matcher N1 as N: [category=="noun" & lemma!="number"];
+matcher C: [category=="conjunction"];
+matcher R: [category=="adverb" & lemma!="very" & lemma!="so" & lemma!="much" & lemma!="where" & lemma!="otherwise" & lemma!="most" & lemma!="how" & lemma!="mostly" & lemma!="best" & lemma!="therefore" & lemma!="more" & lemma!="less" & lemma!="yet" & lemma!="only" & lemma!="when" & lemma!="well"];
+matcher D: [category=="determiner" | category=="article"];
+
+term "n": N;
+term "a": A2;
+term "r": R;
+# from ruta
+term "an": A2 N;
+term "nnn": N N N;
+term "nn": N N;
+term "npn": N1 P ~D? N ;	# modified
+term "aan": A A N ;
+term "ann": A N N ;
+term "npan": N1 P ~D? A N ;
+term "npnn": N1 P ~D? N N ;
+term "acan": A C A N ;

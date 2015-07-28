@@ -1,0 +1,55 @@
+#  ##################
+#  ### WARNING !! ###
+#  ###
+#  ### This resource has been intentionally truncated and may result
+#  ### in poor TermSuite performances.
+#  ###
+#  ### The complete list of rules will be made publicly available shortly, as soon as
+#  ### authors's researches about multi-word term detection, syntactic and
+#  ### and morphosyntactic term variation are published in scientific
+#  ### literature.
+#  ###
+#  ### Be patient ;)
+#  ###
+#  ### B. Daille and D. Cram
+#  ###
+
+
+import eu.project.ttc.types.TermSuiteTypeSystem;
+use eu.project.ttc.types.WordAnnotation;
+set inline = false;
+
+
+matcher P: [category=="preposition" & (lemma=="de" | lemma=="del" | lemma=="a" | lemma=="en" | lemma=="sobre" | lemma=="para" | lemma=="con")];
+matcher A: [category=="adjective"];
+matcher V: [category=="verb"];
+matcher Vbe as V: [category=="verb" & (lemma=="estar"|lemma=="ser")];
+matcher Vpp as A: [V & mood=="participle" & tense=="past"];
+matcher VLadj as A: [V & tag=="VLadj"];
+matcher A2 as A: [A | Vpp | VLadj];
+matcher N: [category=="noun"];
+matcher NP: [tag=="NP"];
+matcher N2 as N: [N | NP];
+matcher C: [category=="conjunction"];
+matcher R: [category=="adverb"];
+matcher D as D: [category=="article"];
+
+
+# from ruta
+term "n": N;
+term "a": A;
+term "r": R;
+term "an": A N;
+term "na": N A2;
+term "nna": N N A;	# ("pares motores elementales")
+term "naa": N A2 A2;
+term "naaa": N A2 A2 A2;
+term "ana": A N A;
+term "nacn": N A C N;	# ("obras públicas y transportes"), but often N A C N A
+term "napn": N A2 P ~D? N;
+term "npnn": N P N N2;	# noisy
+term "npn": N P ~D? N;
+term "npan": N P A N;
+term "npna": N P ~D? N A2;
+term "npncn": N P ~D? N C ~D? N;
+term "npnpn": N P ~D? N P ~D? N;

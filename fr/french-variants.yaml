@@ -1,0 +1,85 @@
+#  ##################
+#  ### WARNING !! ###
+#  ###
+#  ### This resource has been intentionally truncated and may result
+#  ### in poor TermSuite performances.
+#  ###
+#  ### The complete list of rules will be made publicly available shortly, as soon as
+#  ### authors's researches about multi-word term detection, syntactic and
+#  ### and morphosyntactic term variation are published in scientific
+#  ### literature.
+#  ###
+#  ### Be patient ;)
+#  ###
+#  ### B. Daille and D. Cram
+#  ###
+
+
+#################################
+#  NA  #
+#################################
+
+# artificial rule needed fortisation correction of Vpp
+"S-NA":
+  source: N A
+  target: N A
+  rule: s[0]==t[0] && s[1].stem==t[1].stem
+
+# rotation rapide || éolienne à rotation rapide
+"S-Eg-NA-NP":
+  source: N A
+  target: N P N A
+  rule: s[0]==t[2] && s[1]==t[3]
+
+# rotation lent || rotation relativement lent
+"S-I-NA-R":
+  source: N A
+  target: N R A
+  rule: s[0]==t[0] && ( s[1]==t[1] || s[1]==t[2] )
+
+
+#################################
+#  NPN  #
+#################################
+
+#  Insertion  #
+# approvisionnement en électricité || approvisionnement mondial en électricité
+"S-I1-NPN-A":
+  source: N P N
+  target: N A P N
+  rule: s[0]==t[0] && s[1]==t[2] && s[2]==t[3]
+
+
+#################################
+#  NAPN  #
+#################################
+
+# vitesse du vent nominal || vitesse nominal du vent
+"S-P-NAPN-A":
+  source: N P N A
+  target: N A P N
+  rule: s[0]==t[0] && s[2]==t[3] && s[3]==t[1]
+
+
+#################################
+#  NAA  #
+#################################
+
+
+# énergie moyen annuel || énergie annuel moyen
+"S-P-NAA-A":
+  source: N A A
+  target: N A A
+  rule: s[0]==t[0] && s[1]==t[2] && s[2]==t[1]
+
+
+
+#################################
+#  MORPHOLOGICAL  #
+#################################
+
+# micro système - microsystème, kilowatt heure - kilowatt-heure
+"M-S-NN":
+  source: N [compound]
+  target: N N
+  rule: t[0]==s[0][0] && t[1]==s[0][1]
