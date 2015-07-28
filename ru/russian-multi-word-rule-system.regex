@@ -14,7 +14,7 @@
 #  ### B. Daille and D. Cram
 #  ###
 
-
+import eu.project.ttc.types.TermSuiteTypeSystem;
 use eu.project.ttc.types.WordAnnotation;
 set inline = false;
 
@@ -37,8 +37,6 @@ term "a": A;
 term "r": R;
 term "an": A2 N;
 term "npn": N P N ;	# noisy
-term "aan": A A N ;	;
+term "aan": A A N ;
 term "ann": A N Ng ;
 term "nn": N Ng;
-# removed comparing to ruta:
-# N Vpg - never matches, I can find no examples
