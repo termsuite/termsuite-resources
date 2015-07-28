@@ -1,4 +1,6 @@
-This repository contains the set of resources needed by [TermSuite](https://github.com/termsuite/termsuite-core). These resources are:
+# TermSuite-lang (TermSuite resources)
+
+This repository contains the set of resources needed by [TermSuite](https://github.com/termsuite/termsuite-core). These resource are :
 * Language-specific TreeTagger tags to Multex categories/subCategories mappings (`*-tt-*-mapping.xml`),
 * Language-specific morphological analysis resource  (`*-compost-*.txt` files),
 * Language-specific allowed characters (used for non-word or formula detection, `*-allowed-chars.txt` files),
