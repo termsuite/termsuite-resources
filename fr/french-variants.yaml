@@ -25,12 +25,6 @@
   target: N A
   rule: s[0]==t[0] && s[1].stem==t[1].stem
 
-# rotation rapide || éolienne à rotation rapide
-"S-Eg-NA-NP":
-  source: N A
-  target: N P N A
-  rule: s[0]==t[2] && s[1]==t[3]
-
 # rotation lent || rotation relativement lent
 "S-I-NA-R":
   source: N A
