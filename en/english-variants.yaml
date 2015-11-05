@@ -35,14 +35,6 @@
   rule: s[0].stem==t[1].stem && s[1]==t[2]
 
 
-# ecologically sensitive area - sensitivity area
-"S-EgD-NN-R":
-  source: R A N
-  target: N N
-  rule: s[1].stem==t[0].stem && s[2]==t[1]
-
-
-
 
 #################################
 #  AN  #
