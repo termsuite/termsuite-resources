@@ -36,6 +36,7 @@
   <segment type="initial" reverse="false" value="qu'" />
   <segment type="initial" reverse="false" value="jusqu'" />
   <segment type="initial" reverse="false" value="lorsqu'" />
+  <segment type="initial" reverse="false" value="puisqu'" />
   <segment type="final" reverse="true" value="-t-elle" />
   <segment type="final" reverse="true" value="-t-elles" />
   <segment type="final" reverse="true" value="-t-il" />
