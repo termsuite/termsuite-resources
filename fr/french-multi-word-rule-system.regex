@@ -1,6 +1,28 @@
+################################################################################
+# Copyright 2015 - CNRS (Centre National de Recherche Scientifique)
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+################################################################################
+
 import eu.project.ttc.types.TermSuiteTypeSystem;
 use eu.project.ttc.types.WordAnnotation;
-set inline = false; 
+set inline = false;
 
 
 matcher N: [category=="noun"];
@@ -27,8 +49,8 @@ matcher comma: /,/;
 matcher Og: /"|«/;
 matcher Fg: /"|»/;
 
-term "n": N;	
-term "a": A;	
+term "n": N;
+term "a": A;
 term "r": R;
 term "nn": N Nn;
 term "na": N A2 ;
@@ -37,7 +59,7 @@ term "naa": N A2 A;
 term "naaa": N A2 A2 A;
 term "npn": N P ~D? N ;
 term "nnpn": N N P ~D? N;
-term "npnn": N P N1 Nnn; 
+term "npnn": N P N1 Nnn;
 term "npnqnq": N P N1 ~Og Nnn ~Fg;
 term "naca": N A2 C A;
 term "naca+": N A comma A C A;
@@ -48,7 +70,7 @@ term "napn1": N A2 P N;
 term "napan":  N A P A3 N;
 term "napacan":  N A P A3 C A3 N;
 term "napna":  N A P N A3;
-term "dncdna": ~D N C ~D N A; 	
+term "dncdna": ~D N C ~D N A;
 term "dncdnpn": ~D N C ~D N P N ;
 term "npncpn": N P N C P N;
 term "npdncpdn": N P ~D N C P ~D N;
@@ -64,4 +86,4 @@ term "nva": ~D? N Vbe A ;
 term "nvra": ~D? N Vbe R A ;
 
 # from Acabit
-term "npvinf": N Pa Vinf; 
+term "npvinf": N Pa Vinf;
