@@ -12,7 +12,8 @@
   <segment type="initial" reverse="false" value="«" />
   <segment type="initial" reverse="false" value="-" />
   <segment type="final" reverse="true" value="-" />
-  <segment type="final" reverse="true" value="." />
+   <segment type="final" reverse="true" value="&amp;" />
+ <segment type="final" reverse="true" value="." />
   <segment type="final" reverse="true" value="]" />
   <segment type="final" reverse="true" value="}" />
   <segment type="final" reverse="true" value="`" />
