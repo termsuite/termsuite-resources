@@ -9,13 +9,6 @@ This repository contains the set of resources needed by [TermSuite](https://gith
 * Language-specific dictionaries (`*-dico.txt` files),
 * Language-specific term frequencies in a general language corpus (`GeneralLanguage.Lang` files).
 
-
-#WARNING
-
-> This resource has been intentionally truncated and may result in poor TermSuite performances. The complete list of rules will be made publicly available shortly, as soon as authors' researches about multi-word term detection, syntactic and morphosyntactic term variation are published in scientific literature.
-
-> Be patient ;)
-
 ## Supported languages
 
 | Language | Qualitity of resource pack (and other comments)|
