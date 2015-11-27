@@ -1,5 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <filter>
+  <!-- English stop words-->
+  <item value="and" />
+  <item value="or" />
+  <item value="in" />
+  <item value="the" />
+  <item value="a" />
+  <item value="for" />
+  <item value="abstract" />
+  <item value="al" />
+  <item value="cf" />
+  <item value="www" />
+  <item value="to" />
+  <item value="ie" />
+  <item value="eg" />
+  <item value="i.e" />
+  <item value="e.g" />
+  <item value="i.e." />
+  <item value="e.g." />
+
+  <!-- Particule-->
+  <item value="-y" />
+  <item value="-en" />
+  <item value="-t-il" />
+  <item value="-t-ils" />
+  <item value="-t-elle" />
+  <item value="-t-elles" />
+  <item value="-t-on" />
+  <item value="-ci" />
+  <item value="-là" />
+  <item value="-la" />
+  <item value="-il" />
+  <item value="-ils" />
+  <item value="-elle" />
+  <item value="-elles" />
+  <item value="-ce" />
+  <item value="-le" />
+  <item value="-les" />
+  <item value="-leur" />
+  <item value="-lui" />
+  <item value="-même" />
+  <item value="-on" />
+  <item value="-moi" />
+  <item value="-nous" />
+  <item value="qu'" />
+  <item value="d'" />
+  <item value="s'" />
+  <item value="n'" />
+  <item value="l'" />
+  <item value="c'" />
+  <item value="m'" />
+  <item value="j'" />
+  <item value="t'" />
+  <item value="puisqu'" />
+  <item value="jusqu'" />
+  <item value="lorsqu'" />
+
+
   <item value="a" />
   <item value="à" />
   <item value="â" />

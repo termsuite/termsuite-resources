@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <filter>
+  <!-- English stop words-->
+  <item value="and" />
+  <item value="or" />
+  <item value="in" />
+  <item value="the" />
+  <item value="a" />
+  <item value="for" />
+  <item value="abstract" />
+  <item value="al" />
+  <item value="cf" />
+  <item value="www" />
+  <item value="to" />
+  <item value="ie" />
+  <item value="eg" />
+  <item value="i.e" />
+  <item value="e.g" />
+  <item value="i.e." />
+  <item value="e.g." />
+
   <item value="а" />
   <item value="е" />
   <item value="и" />
