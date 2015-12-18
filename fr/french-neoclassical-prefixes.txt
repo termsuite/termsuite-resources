@@ -4,7 +4,7 @@ abdomino
 adéno
 adréno
 adria
-aéro
+aéro	air
 afro
 agri
 agro
@@ -56,32 +56,32 @@ carb
 carbo
 carcin
 carcino
-carde
-cardi
-cardie
-cardio
-cardique
+carde	coeur
+cardi	coeur
+cardie	coeur
+cardio	coeur
+cardique	coeur
 caryo
 cèle
 cèles
 célio
-cellulo
+cellulo	cellule
 centi
-centr
-centrie
-centrique
-centrisme
-centro
+centr	centre
+centrie	centre
+centrique	centre
+centrisme	centre
+centro	centre
 cépro
-cérébr
-cérébro
-cervico
+cérébr	cerveau
+cérébro	cerveau
+cervico	cervical
 charactér
 charactéro
 chémo
-chimio
-chlor
-chloro
+chimio	chimie
+chlor	chlore
+chloro	chlore
 chondr
 chondrie
 chondro
@@ -119,8 +119,8 @@ contre
 contro
 cortico
 cosmo
-crate
-cratie
+crate	pouvoir
+cratie	pouvoir
 crine
 cry
 cryo
@@ -138,7 +138,7 @@ cyto
 de
 dé
 déci
-démo
+démo	peuple
 densit
 densito
 déonto
@@ -158,8 +158,8 @@ ectomie
 edème
 électr
 électro
-embry
-embryo
+embry	embryon
+embryo	embryon
 émie
 émique
 endo
@@ -209,7 +209,7 @@ graphie
 graphique
 grapho
 gyn
-gynéco
+gynéco	femme
 gyno
 hecto
 hélio
@@ -231,8 +231,8 @@ histo
 homéo
 homo
 hyd
-hydr
-hydro
+hydr	eau
+hydro	eau
 hygiéno
 hyper
 hyphophys
@@ -348,7 +348,7 @@ myco
 myo
 né
 négato
-néo
+néo	nouveau
 neur
 neural
 neurie
@@ -357,8 +357,8 @@ névro
 nome
 nomie
 non
-nuclé
-nucléo
+nuclé	noyau
+nucléo	noyau
 ocul
 oculo
 oeso
@@ -450,20 +450,20 @@ plastique
 pleuro
 ploïde
 pluri
-pneumo
-pode
-podo
+pneumo	poumon
+pode	pied
+podo	pied
 pole
 poly
 poso
-post
-pré
+post	après
+pré	avant
 préo
-pro
+pro	pour
 progesto
 prot
-protéin
-protéino
+protéin	protéine
+protéino	protéine
 protéo
 proto
 pseud
@@ -471,17 +471,17 @@ pseudo
 psych
 psycho
 pyro
-quadr
-quadri
+quadr	quatre
+quadri	quatre
 r
 radi
 radio
 rapa
 re
 ré
-réacto
-réflex
-réflexo
+réacto	réaction, réacteur
+réflex	réflexe
+réflexo	réflexe
 rétin
 rétino
 retro
@@ -500,8 +500,8 @@ semi
 sémio
 séno
 séro
-sexo
-socio
+sexo	sexe
+socio	
 soma
 somat
 somato
@@ -525,12 +525,12 @@ strep
 strepto
 sub
 sulfo
-super
-supéro
+super	super
+supéro	super
 sur
-technie
-technique
-techno
+technie	technique
+technique	technique
+techno	technique
 tel
 tél
 télé
@@ -542,10 +542,10 @@ thélial
 thelium
 thélium
 thérapie
-therm
-therme
-thermie
-thermo
+therm	température
+therme	température
+thermie	température
+thermo	température
 thoraco
 thromb
 thrombo
@@ -556,10 +556,10 @@ tope
 topo
 trano
 trans
-tri
-tumor
-tumori
-tumoro
+tri	trois
+tumor	tumeur
+tumori	tumeur
+tumoro	tumeur
 type
 typie
 typo
@@ -568,8 +568,8 @@ uni
 uno
 uro
 vas
-vascul
-vasculo
+vascul	vaisseau
+vasculo	vaisseau
 vaso
 xén
 xéno
