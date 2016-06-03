@@ -1,3 +1,6 @@
+
+These resources are compliant with TermSuite version >= 2.2.
+
 # TermSuite-lang (TermSuite resources)
 
 This repository contains the set of resources needed by [TermSuite](https://github.com/termsuite/termsuite-core). These resource are :
