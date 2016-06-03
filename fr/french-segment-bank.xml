@@ -67,10 +67,5 @@
   <segment type="final" reverse="true" value="-y" />
   <segment type="final" reverse="true" value="-ci" />
   <segment type="final" reverse="true" value="-là" />
-  <segment type="compound" reverse="false" value="ainsi qu'" />
-  <segment type="compound" reverse="false" value="ainsi que" />
   <segment type="compound" reverse="false" value="c'est-à-dire" />
-  <segment type="compound" reverse="false" value="d'emblée" />
-  <segment type="compound" reverse="false" value="d'une part" />
-  <segment type="compound" reverse="false" value="d'autre part" />
 </segments>
