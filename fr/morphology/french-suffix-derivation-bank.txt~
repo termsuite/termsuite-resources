@@ -13,187 +13,187 @@
 # FORCER A	N
 
 #ique 25 règles
--ématique	-ème
+AN	-ématique	-ème
 # EM le 09/05/08 : thérapeutique/thérapie
--eutique	-ie
--étrique	-ètre
--tifique	-ce
+AN	-eutique	-ie
+AN	-étrique	-ètre
+AN	-tifique	-ce
 #hypnotique/hypnose
--otique	-ose
--inique	-en
+AN	-otique	-ose
+AN	-inique	-en
 # suffixe en "ique"
--atique	-e
--atique	-a
+AN	-atique	-e
+AN	-atique	-a
 #analytique/analyse
--ytique	-se
--élique	-ile
--cique	-x
--tique	-
+AN	-ytique	-se
+AN	-élique	-ile
+AN	-cique	-x
+AN	-tique	-
 # EM le 09/05/08 : métastatique/métastase
--tique	-se
--ique	-
--ique	-ie
+AN	-tique	-se
+AN	-ique	-
+AN	-ique	-ie
 #dictionnaire/dictionnairique
--ique	-e
--ique	-a
--ique	-i
--ique	-é
--ique	-as
+AN	-ique	-e
+AN	-ique	-a
+AN	-ique	-i
+AN	-ique	-é
+AN	-ique	-as
 #tétanique/tétanos
--ique	-os
+AN	-ique	-os
 #métamorphique/métamorphose
--ique	-ose
+AN	-ique	-ose
 #tonique/tonus
--ique	-us
--ique	-icité
--ique	-isme
+AN	-ique	-us
+AN	-ique	-icité
+AN	-ique	-isme
 
 #aire 12 règles
 #pulmonaire/poumon
--ulmonaire	-oumon
+AN	-ulmonaire	-oumon
 # muscle/musculaire
--ulaire	-le
--étaire	-ète
--laire	-
--laire	-e
--iaire	-e
--naire	-
--naire	-in
--aire	-
--aire	-e
+AN	-ulaire	-le
+AN	-étaire	-ète
+AN	-laire	-
+AN	-laire	-e
+AN	-iaire	-e
+AN	-naire	-
+AN	-naire	-in
+AN	-aire	-
+AN	-aire	-e
 #volontaire/volonté
--aire	-é
--aire	-ation
+AN	-aire	-é
+AN	-aire	-ation
 
 #al  22 règles
--oronal	-ouronne
+AN	-oronal	-ouronne
 #pondéral/poids
--ndéral	-ids
--estial	-ête
+AN	-ndéral	-ids
+AN	-estial	-ête
 # salaire/salarial
--arial	-aire
+AN	-arial	-aire
 # médical/médecine
--dical	-decine
--acal	-e
--asal	-ez
+AN	-dical	-decine
+AN	-acal	-e
+AN	-asal	-ez
 #  rénal/rein
--énal	-ein
+AN	-énal	-ein
 # EM le 15/05/08 : viscéral/viscère
--éral	-ère
--ital	-et
+AN	-éral	-ère
+AN	-ital	-et
 
 # nominal/nom
--inal	-
--inal	-en
--ical	-ex
--ocal	-oix
+AN	-inal	-
+AN	-inal	-en
+AN	-ical	-ex
+AN	-ocal	-oix
 #floral/fleur
--oral	-eur
--yal	-i
+AN	-oral	-eur
+AN	-yal	-i
 # province/provincial
--ial	-e
--cal	-que
--al	-
--al	-e
+AN	-ial	-e
+AN	-cal	-que
+AN	-al	-
+AN	-al	-e
 #rectal/rectum
--al	-um
+AN	-al	-um
 #viral/virus
--al	-us
+AN	-al	-us
 
 #eux 11 règles
--oureux	-eur
+AN	-oureux	-eur
 #EM le 13/05/08 : carcinomateuxcarcinome
--ateux	-e
+AN	-ateux	-e
 #EM le 20/04/08 : cancéreux/cancer
--éreux	-er
+AN	-éreux	-er
 #pileux/poil
--ileux	-oil
--uleux	-le
--ieux	-e
--ieux	-ion
+AN	-ileux	-oil
+AN	-uleux	-le
+AN	-ieux	-e
+AN	-ieux	-ion
 # osseux/os
--seux	-
+AN	-seux	-
 # EM le 15/05/08 : comateux/coma
--teux	-
--eux	-
--eux	-e
+AN	-teux	-
+AN	-eux	-
+AN	-eux	-e
 
 #oire 1 règle
--oire	-ion
+AN	-oire	-ion
 
 #é    6 règles
--boré	-bre
--iégé	-iège
--ulé	-le
+AN	-boré	-bre
+AN	-iégé	-iège
+AN	-ulé	-le
 #cactée/cactus
--é	-us
--é	-e
--é	-ure
+AN	-é	-us
+AN	-é	-e
+AN	-é	-ure
 
 #cole 1 règle
--cole	-culture
+AN	-cole	-culture
 
 #er  5 règles
--égulier	-ègle
+AN	-égulier	-ègle
 #forêt/forestier
--estier	-êt
--ier	-
+AN	-estier	-êt
+AN	-ier	-
 #bourse/boursier
--ier	-e
--er	-e
+AN	-ier	-e
+AN	-er	-e
 
 #ien 8 règles
 # EM le 20/04/08 : aérien/air
--érien	-ir
+AN	-érien	-ir
 #rachidien/rachis
--idien	-is
+AN	-idien	-is
 #EM le 10/05/08 : ovarien/ovaire
--arien	-aire
--orien	-oire
+AN	-arien	-aire
+AN	-orien	-oire
 #Balzac/balzacien
--ien	-
+AN	-ien	-
 # EM le 15/05/08 : oesophagien/oesophage
--ien	-e
--ien	-ie
+AN	-ien	-e
+AN	-ien	-ie
 #pubien/pubis
--ien	-is
+AN	-ien	-is
 
 #ain 1 règle
--orain	-oire
+AN	-orain	-oire
 
 #el 4 règles
--iel	-ie
+AN	-iel	-ie
 #eternel/eternité
--el	-ité
+AN	-el	-ité
 #culture/culturel
--el	-e
--el	-
+AN	-el	-e
+AN	-el	-
 
 #in 6 règles
--arin	-er
--alin	-el
+AN	-arin	-er
+AN	-alin	-el
 #sanguin/sang
--guin	-g
--lin	-
--in	-
+AN	-guin	-g
+AN	-lin	-
+AN	-in	-
 #utérin/utérus
--in	-us
+AN	-in	-us
 
 #if 3 règles
--ursif	-ours
--if	-
--if	-ion
+AN	-ursif	-ours
+AN	-if	-
+AN	-if	-ion
 
 #Traitement pas propre des racines supplétives
 #iaque
 
 # EM le 10/05/08 : cardiaque/coeur
--ardiaque	-oeur
+AN	-ardiaque	-oeur
 
 #xillaire
 
 # EM le 15/05/08 : axillaire/aisselle
--xillaire	-isselle
+AN	-xillaire	-isselle
 
 
 ####################################################################
@@ -204,100 +204,100 @@
 # FORCER N	 N
 ### @TSuffS1 = (
 #eur
--eur	-
--eur	-e
+NN	-eur	-
+NN	-eur	-e
 #ier
--ier	-
--ier	-e
+NN	-ier	-
+NN	-ier	-e
 #er
--er	-
--er	-e
+NN	-er	-
+NN	-er	-e
 
 ##SUFFENS
 # N1 P N vers N2 P N (plume de carnad, plumage de canard)
 # FORCER N	N
 ### @TSuffEns = (
 #ade
--ade	-e
--ade	-
+NN	-ade	-e
+NN	-ade	-
 #age
--osage	-ôt
--lage	-
--nage	-
+NN	-osage	-ôt
+NN	-lage	-
+NN	-nage	-
 #langage/langue
--gage	-gue
--age	-e
--age	-
+NN	-gage	-gue
+NN	-age	-e
+NN	-age	-
 #erie
 #foresterie/forêt
--esterie	-êt
--nnerie	-n
--erie	-e
--erie	-
+NN	-esterie	-êt
+NN	-nnerie	-n
+NN	-erie	-e
+NN	-erie	-
 
 
 ####################################################################
 # 3/ INVERSION (nom est dérivé de l'adjectif)
 # Traitement morphologique des inversions refletant "action de V"
 # de N1 A vers N P N1 => nuit noire, noirceur de la nuit
-# FORCER A	N
+# FORCER N	A
 ### @TSuffInv
 #ade
--ade	-er
+NA	-ade	-er
 #grossier/grossièreté
--ièreté	-ier
+NA	-ièreté	-ier
 #clair/clarté
--arté	-air
--ité	-e
+NA	-arté	-air
 #stupide/stupidité
--ité	-
+NA	-ité	-e
+NA	-ité	-
 #beau/beauté
--té	-
+NA	-té	-
 #erie
--erie	-er
--erie	-e
+NA	-erie	-er
+NA	-erie	-e
 
 #ence
 #transparent/transparence
--ence	-ent
+NA	-ence	-ent
 
 # esse
 #bas/bassesse
--ssesse	-s
+NA	-ssesse	-s
 #vite/vitesse
--esse	-e
+NA	-esse	-e
 
 #eur
 #gros/grosseur
--sseur	-s
+NA	-sseur	-s
 
 #lent/lenteur
--eur	-
+NA	-eur	-
 
 #ise
 #bête/bêtise
--ise	-e
+NA	-ise	-e
 
 #ure
 #droit/droiture
--ure	-
--ure	-er
+NA	-ure	-
+NA	-ure	-er
 #ion
 #correct/correction
--ion	-
+NA	-ion	-
 
 #age
--issage	-ir
--age	-er
+NA	-issage	-ir
+NA	-age	-er
 
 #ation
--ification	-
--isation	-
--ation	-er
+NA	-ification	-
+NA	-isation	-
+NA	-ation	-er
 
 #ement
--chissement	-c
--issement	-ir
--nement	-ner
+NA	-chissement	-c
+NA	-issement	-ir
+NA	-nement	-ner
 
 
