@@ -1,0 +1,14 @@
+#
+# List of exceptions to suffix derivation rules
+#
+# Line: Format
+# derivateForm	regularForm	
+#
+
+#EXCEPTION_SUFF_ENS_AGE
+paysage	pays
+
+#Exception_suffixe_rel_É
+fermé	ferme
+
+
