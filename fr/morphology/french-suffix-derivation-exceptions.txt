@@ -1,14 +1,6 @@
-#
-# List of exceptions to suffix derivation rules
-#
-# Line: Format
-# derivateForm	regularForm	
-#
-
-palier	pale
-
 #EXCEPTION_SUFF_ENS_AGE
 paysage	pays
+avantage
 
 #Exception_suffixe_rel_É
 fermé	ferme

@@ -312,7 +312,8 @@
 "S-R2D-NPN":
   source: N P N
   target: N A
-  rule: s[0]==t[0] && deriv("N A", s[2], t[1])
+  rule: s[0]==t[0] && (s[2].stem==t[1].stem || (s[2]=="coeur" && t[1]=="cardiaque"))
+
 
 # DOES NOT MATCH
 # A par B - A en fonction de B
@@ -425,17 +426,18 @@
 
 # DOES NOT MATCH
 # éolien - proéolien
-"N-prefN":
-  source: N
-  target: N
-  rule: prefix(t[0],s[0])
+#"N-prefN":
+#  source: N
+#  target: N
+#  rule: t.compound && s[0]==t[0][1]
 
 
+# DOES NOT MATCH
 # générateur synchrone - générateur asynchrone
-"NA-NprefA":
-  source: N A
-  target: N A
-  rule: s[0]==t[0] && prefix(t[1],s[1])
+#"NA-NprefA":
+#  source: N A
+#  target: N A
+#  rule: t[1].compound && s[0]==t[0] && s[1]==t[1][1] # && (t[1][0]=="a"||t[1][0]=="hyper"||t[1][0]=="ir"||t[1][0]=="non"||t[1][0]=="dé")
 
 
 # prefixes: hyper, a, ir, non, dé
