@@ -182,7 +182,7 @@
 "S-PID-NA-P":
   source: N A
   target: N P N
-  rule: s[0]==t[2] && s[1].stem==t[0].stem
+  rule: s[0]==t[2] && deriv("A N", s[1], t[0])
 
 
 #Plusieurs operations#
@@ -305,14 +305,11 @@
   rule: s[0]==t[0] && s[2]==t[2]
 
 
-# Subsitution PN par adjR
-# phase du stator - phase statorique
-# Dérivé N P N -> N A
-# TODO Réécrire : s[0]==t[0] && (derivNA(s[2], t[1]) | s[2].stem==t[1].stem)
+# phase du stator | phase statorique
 "S-R2D-NPN":
   source: N P N
   target: N A
-  rule: s[0]==t[0] && (s[2].stem==t[1].stem || (s[2]=="coeur" && t[1]=="cardiaque"))
+  rule: s[0]==t[0] && deriv("N A", s[2], t[1])
 
 
 # DOES NOT MATCH
@@ -431,13 +428,10 @@
 #  target: N
 #  rule: t.compound && s[0]==t[0][1]
 
-
-# DOES NOT MATCH
-# générateur synchrone - générateur asynchrone
-#"NA-NprefA":
-#  source: N A
-#  target: N A
-#  rule: t[1].compound && s[0]==t[0] && s[1]==t[1][1] # && (t[1][0]=="a"||t[1][0]=="hyper"||t[1][0]=="ir"||t[1][0]=="non"||t[1][0]=="dé")
-
+# machine synchrone - machine asynchrone
+"NA-NprefA":
+  source: N A
+  target: N A
+  rule: s[0]==t[0] && prefix(t[1],s[1])
 
 # prefixes: hyper, a, ir, non, dé

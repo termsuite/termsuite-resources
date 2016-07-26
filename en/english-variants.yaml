@@ -301,7 +301,7 @@
 "M-I-EN-N|A":
   source: N [compound]
   target: N N, A N
-  rule: t[0].compound && s[0][0]==t[0][0] && s[0][1] == t[1]
+  rule: s[0][0]==t[0][0] && s[0][1] == t[1]
 
 
 # hydropower - hydro and nuclear power, turbine-blades - turbine and rotor blade
