@@ -288,7 +288,7 @@
 "M-S-(A|N)NN":
   source: A N
   target: A N N, N N N, A A N
-  rule: s[1][0]==t[1] && s[1][1]==t[2]
+  rule: s[0]==t[0] && s[1][0]==t[1] && s[1][1]==t[2]
 
 # grid-connected - grid connection, right-sided - right side
 "M-SD-(N|A)N":
