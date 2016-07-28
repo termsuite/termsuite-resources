@@ -1,7 +1,7 @@
 #!/bin/sh
 
 TERMSUITE_UI_DIR=$1
-TARGET_DIR=$1bundles/fr.univnantes.termsuite.resources/
+TARGET_DIR=$1bundles/fr.univnantes.termsuite.resources/lib/
 
 
 if [ ! -d $TERMSUITE_UI_DIR ]
