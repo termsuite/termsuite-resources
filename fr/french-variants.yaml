@@ -387,20 +387,12 @@
 #  rule: s.compound && s[0][0]==t[2] && s[0][1]==t[0]
 
 
-# DOES NOT MATCH on Wind Energy
-# énergie électrique - énergie hydroélectrique
-"M-R1-NA":
-  source: N A
-  target: N A
-  rule: t[1].compound && s[0]==t[0] && s[1] == t[1][1]
-
-
 # DOES NOT MATCH
 # turbine bipale - turbine bi- ou tripale
 "M-I-NA-CE":
   source: N A
   target: N A C A, N N C A
-  rule: s[1].compound && t[3].compound && s[1][0]==t[1] && s[1][1]==t[3][1]
+  rule: s[1].compound && t[3].compound && s[0]==t[0] && s[1]!=t[3] && s[1][0]==t[3][0] && s[1][1]==t[3][1]
 
 
 # DOES NOT MATCH (2 car)
@@ -435,3 +427,29 @@
   rule: s[0]==t[0] && prefix(t[1],s[1])
 
 # prefixes: hyper, a, ir, non, dé
+
+
+# synonymes
+"NA-NsynA":
+  source: N A
+  target: N A
+  rule: s[0]==t[0] && synonym(t[1],s[1])
+
+# synonymes
+"NA-synNA":
+  source: N A
+  target: N A
+  rule: s[1]==t[1] && synonym(t[0],s[0])
+
+# synonymes
+"NPN-NPsynN":
+  source: N P N
+  target: N P N
+  rule: s[0]==t[0] && s[1]==t[1] && synonym(t[2],s[2])
+  
+# synonymes
+"NPN-synNPN":
+  source: N P N
+  target: N P N
+  rule: s[2]==t[2] && s[1]==t[1] && synonym(t[0],s[0])
+  

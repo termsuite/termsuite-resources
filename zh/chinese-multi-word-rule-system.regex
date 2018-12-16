@@ -20,10 +20,14 @@
 #
 ################################################################################
 
-import eu.project.ttc.types.TermSuiteTypeSystem;
-use eu.project.ttc.types.WordAnnotation;
+import fr.univnantes.termsuite.types.TermSuiteTypeSystem;
+use fr.univnantes.termsuite.types.WordAnnotation;
 set inline = false;
 
 matcher N: [category=="noun"];
+matcher A: [category=="adjective"];
 
-term "nn": N N;
+rule "n": N;
+rule "a": A;
+rule "nn": N N;
+rule "an": A N;

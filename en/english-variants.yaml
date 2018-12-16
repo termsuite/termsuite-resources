@@ -196,8 +196,6 @@
   target: N P N
   rule: s[0]==t[0] && s[2]==t[2]
 
-
-
 # # NOT CORRECT : effect of angle || effect of angle of attack
 # "S-Ed-NPN-PN":
 #   source: N P N
@@ -278,17 +276,19 @@
 #  MORPHOLOGICAL  #
 #################################
 
-# windmill - wind mill, rotor-blades - rotor blade
+# n: windmill - nn: wind mill, n: rotor-blades - nn: rotor blade
+# n: horizontal-axis, an: horizontal-axis
 "M-S-NN":
   source: N [compound]
-  target: N N
+  target: N N, A N
   rule: s[0][0]==t[0] && s[0][1]==t[1]
 
 #local tip-speed - local tip speed
-"M-S-(A|N)NN":
-  source: A N
-  target: A N N, N N N, A A N
-  rule: s[0]==t[0] && s[1][0]==t[1] && s[1][1]==t[2]
+# Infered from M-S-NN
+#"M-S-(A|N)NN":
+#  source: A N
+#  target: A N N, N N N, A A N
+#  rule: s[0]==t[0] && s[1][0]==t[1] && s[1][1]==t[2]
 
 # grid-connected - grid connection, right-sided - right side
 "M-SD-(N|A)N":
@@ -353,14 +353,6 @@
 #   target: A P N
 #   rule: s[0][0]==t[2] && s[0][1]==t[0]
 
-# DOES NOT MATCH
-# bronchogenic carcinoma - carcinoma of the lung
-# should also match AN-NPDN
-"M-IPR2-NPN":
-  source: A N
-  target: N P N
-  rule: s[0].compound && s[1]==t[0]  && s[0][0]=="broncho" && t[2]=="lung"
-
 
 # airflow - air mass flow
 "M-I-NN-N":
@@ -389,3 +381,76 @@
   source: A N N
   target: A N N
   rule: s[0].compound && t[0].compound && s[0][0]==t[0][0] && s[0][1] == t[1] && s[2] == t[2]
+
+  
+  
+# With Prefixes
+"AN-prefAN":
+  source: A N
+  target: A N
+  rule: s[1]==t[1] && prefix(t[0], s[0])
+  
+"ANN-prefANN":
+  source: A N N
+  target: A N N
+  rule: s[1]==t[1] && s[2]==t[2] && prefix(t[0], s[0])
+
+"AAN-AprefAN":
+  source: A A N
+  target: A A N
+  rule: s[0]==t[0] && s[2]==t[2] && prefix(t[1], s[1])
+
+# With Derivates
+"S-PID-AN-P":
+  source: A N
+  target: N P N
+  rule: s[1]==t[2] && deriv("A N", s[0], t[0])
+
+
+"S-R2D-NN":
+  source: N N
+  target: A N
+  rule: s[1]==t[1] && deriv("A N", t[0], s[0])
+
+"S-R2D-NN1":
+  source: N N
+  target: A N
+  rule: s[1]==t[1] && deriv("N A", s[0], t[0])
+
+
+# synonymes
+"AN-AsynN":
+  source: A N
+  target: A N
+  rule: s[0]==t[0] && synonym(t[1],s[1])
+
+# synonymes
+"AN-synAN":
+  source: A N
+  target: A N
+  rule: s[1]==t[1] && synonym(t[0],s[0])
+
+# synonymes
+"NN-NsynN":
+  source: N N
+  target: N N
+  rule: s[0]==t[0] && synonym(t[1],s[1])
+
+# synonymes
+"NN-synNN":
+  source: N N
+  target: N N
+  rule: s[1]==t[1] && synonym(t[0],s[0])
+
+# synonymes
+"NPN-NPsynN":
+  source: N P N
+  target: N P N
+  rule: s[0]==t[0] && s[1]==t[1] && synonym(t[2],s[2])
+
+# synonymes
+"NPN-synNPN":
+  source: N P N
+  target: N P N
+  rule: synonym(t[0],s[0]) && s[1]==t[1] && s[2]==t[2]
+  
